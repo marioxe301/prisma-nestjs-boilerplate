@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { USER_SERVICE_KEY } from './service/user.key';
 import { UserService } from './service/user.service';
-import { PRISMA_SERVICE_KEY } from 'src/prisma/prisma.key';
-import { PrismaService } from 'src/prisma/prisma.service';
 import { UserController } from './controller/user.controller';
+import { PRISMA_SERVICE_KEY } from '@prisma/module/prisma.key';
+import { PrismaService } from '@prisma/module/prisma.service';
 
 @Module({
   providers: [

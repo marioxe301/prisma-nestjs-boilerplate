@@ -1,4 +1,4 @@
-import { StringField, BooleanField } from 'src/decorators/validation';
+import { StringField, BooleanField } from '@decorators/validation';
 
 export interface PostDto {
   id?: string;

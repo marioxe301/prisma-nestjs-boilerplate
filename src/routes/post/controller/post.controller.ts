@@ -1,16 +1,16 @@
 import {
-  Body,
   Controller,
-  Delete,
-  Get,
   Inject,
+  Get,
   Param,
   Post,
+  Body,
   Put,
+  Delete,
 } from '@nestjs/common';
+import { CreatePostDto, UpdatePostDto } from '../dto/post';
 import { IPostService } from '../repository/interface/service';
 import { POST_SERVICE_KEY } from '../service/post.key';
-import { CreatePostDto, UpdatePostDto } from '../dto/post';
 import { Post as TPost } from '@prisma/client';
 
 @Controller('post')

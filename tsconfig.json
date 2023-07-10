@@ -12,10 +12,16 @@
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@routes/*": ["src/routes/*"],
+      "@repository/*": ["src/repository/*"],
+      "@prisma/module/*": ["src/prisma/*"],
+      "@decorators/*": ["src/decorators/*"]
+    }
   }
 }

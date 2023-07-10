@@ -1,4 +1,4 @@
-import { StringField } from 'src/decorators/validation';
+import { StringField } from '@decorators/validation';
 
 export interface UserDto {
   id?: string;

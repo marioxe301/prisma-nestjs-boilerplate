@@ -1,11 +1,11 @@
-import { Inject, Injectable } from '@nestjs/common';
-import { IPostPrismaDelegate } from '../repository/interface/prisma.delegate';
-import { BaseRepositoryService } from 'src/repository/service/repository.service';
+import { Injectable, Inject } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
-import { DelegationTemplate } from 'src/repository/interface/delegate';
+import { DelegationTemplate } from '@repository/interface/delegate';
+import { BaseRepositoryService } from '@repository/service/repository.service';
 import { IPostArgumentMap } from '../repository/interface/argument-map';
+import { IPostPrismaDelegate } from '../repository/interface/prisma.delegate';
 import { IPostReturnMap } from '../repository/interface/return-map';
-import { PRISMA_SERVICE_KEY } from 'src/prisma/prisma.key';
+import { PRISMA_SERVICE_KEY } from '@prisma/module/prisma.key';
 
 @Injectable()
 export class PostService extends BaseRepositoryService<

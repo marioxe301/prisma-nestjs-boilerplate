@@ -1,5 +1,5 @@
 import { Post } from '@prisma/client';
-import { IReturnMap } from 'src/repository/interface/return-map';
+import { IReturnMap } from '@repository/interface/return-map';
 
 export class IPostReturnMap implements IReturnMap {
   create: Post;

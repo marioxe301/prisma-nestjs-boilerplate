@@ -1,5 +1,5 @@
-import { IService } from 'src/repository/interface/service';
-import { IUserReturnMap } from './return-map';
+import { IService } from '@repository/interface/service';
 import { IUserArgumentMap } from './argument-map';
+import { IUserReturnMap } from './return-map';
 
 export type IUserService = IService<IUserArgumentMap, IUserReturnMap>;

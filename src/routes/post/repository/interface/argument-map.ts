@@ -1,5 +1,5 @@
 import { Prisma } from '@prisma/client';
-import { IArgumentMap } from 'src/repository/interface/argument-map';
+import { IArgumentMap } from '@repository/interface/argument-map';
 
 export class IPostArgumentMap implements IArgumentMap {
   create: Prisma.PostCreateArgs;

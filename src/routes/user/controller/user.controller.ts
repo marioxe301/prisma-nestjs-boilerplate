@@ -1,17 +1,17 @@
 import {
-  Body,
   Controller,
-  Delete,
-  Get,
   Inject,
+  Get,
   Param,
   Post,
+  Body,
   Put,
+  Delete,
 } from '@nestjs/common';
+import { User } from '@prisma/client';
+import { CreateUserDto, UpdateUserDto } from '../dto/user';
 import { IUserService } from '../repository/interface/service';
 import { USER_SERVICE_KEY } from '../service/user.key';
-import { CreateUserDto, UpdateUserDto } from '../dto/user';
-import { User } from '@prisma/client';
 
 @Controller('user')
 export class UserController {

@@ -31,6 +31,7 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
+    "@golevelup/ts-jest": "^0.3.8",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
@@ -61,6 +62,12 @@
       "ts"
     ],
     "rootDir": "src",
+    "moduleNameMapper": {
+      "^@decorators/(.*)$": "<rootDir>/decorators/$1",
+      "^@routes/(.*)$": "<rootDir>/routes/$1",
+      "^@prisma/module/(.*)$": "<rootDir>/prisma/$1",
+      "^@repository/(.*)$": "<rootDir>/repository/$1"
+    },
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
